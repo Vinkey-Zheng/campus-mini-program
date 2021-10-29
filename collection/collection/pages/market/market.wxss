@@ -1,0 +1,122 @@
+/* pages/market/market.wxss */
+/* 第一个大容器，装头像、昵称、时间等 */
+page{
+  background-color:#efeff4;
+}
+.container{
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+  background-color: white;
+}
+.container1{
+  display:flex;/*布局*/
+  flex-direction:row;
+  width: 700rpx;
+}
+/* 第二个大容器装图片（商品展示） */
+.container2{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  width: 700rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+/* a\b\c分别表示大容器中的小容器 */
+.a{
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+}
+.b{
+  width: 300rpx;
+  padding-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+}
+.c{
+  width: 300rpx; 
+  padding-top: 22rpx;
+}
+.host-container{
+  width: 700rpx;
+  display: flex;
+  flex-direction: column;
+}
+.host-reply{
+width: 600rpx;
+display: flex;
+flex-direction:column;
+padding-left: 100rpx;
+}
+.reply-container{
+  width: 600rpx;
+  display:flex;
+  flex-direction: row;
+  padding-top: 20rpx;
+  background-color:#efeff4;
+  border-start-end-radius: 10%;
+}
+.com-container{
+  width: 700rpx;
+  display:flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+}
+.nickname{
+  padding-top: 10rpx;
+  color:black;
+  font-size:36rpx;/*the size of the character */
+}
+.time{
+  color:gray;
+  font-size:26rpx;/*the size of the character */
+  padding-top: 10rpx;
+}
+.howlong{
+  color:gray;
+  font-size:26rpx;/*the size of the character */
+  padding-top: 66rpx;
+}
+.comments{
+  color:gray;
+  font-size:36rpx;/*the size of the character */
+  padding-left: 20rpx;
+  width:600rpx;
+}
+.name{
+  color:red;
+  font-size:36rpx;
+  width:200rpx;
+  padding-left:20rpx;
+}
+.items{
+  height: 60rpx;
+  color: black;
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+  background-color: white;
+  font-size :36rpx;
+}
+.descibe{
+  color:grey;
+  padding-left:40rpx ;
+  padding-top:10rpx ;/*容器内距离*/
+  background-color: white;
+  font-size:30rpx;/*the size of the character */
+}
+/* 设置商品的图片大小 */
+.sellphoto{
+  width:200rpx;/*图片大小*/
+  height: 240rpx;
+  border-radius: 5%;/*四个角为圆角*/
+}
+/* 评论区头像设置 */
+.headphoto{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}

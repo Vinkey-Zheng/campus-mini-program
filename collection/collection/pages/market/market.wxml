@@ -1,0 +1,131 @@
+<view class="container">
+  <!-- 昵称姓名开始 -->
+  <view class="container1">
+    <!-- 头像开始 -->
+    <view class='a'>
+      <image 
+      src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201709%2F06%2F20170906180705_ynEKZ.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624021430&t=316de57674b3ce6f4abea09b4b735987" class="headphoto"></image>
+    </view>
+    <!-- 头像结束  -->
+
+    <!-- 昵称，时间开始 -->
+    <view class='b'>
+      <view class="nickname">{{nickname}}</view>
+      <view class="time"> {{date}} {{time}}</view>
+    </view>
+    <!-- 昵称，时间结束 -->
+
+    <!-- 多久之前来过 -->
+    <view class="c">
+      <view class="howlong">{{howlong}}</view>
+    </view>
+    <!-- 多久之前来过 -->
+
+  </view>
+  <!-- 姓名昵称结束 -->
+
+
+  <!-- 商品介绍开始 -->
+  <view>
+    <view class='items'>{{items}} {{price}}</view>
+    <view class="descibe">{{description}}</view>
+  </view>
+  <!-- 商品介绍结束 -->
+
+  <!-- 放图片 -->
+  <view class="container2">
+    <!-- 第一张 -->
+    <view class="c">
+      <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2955645470,1731993861&fm=11&gp=0.jpg"
+        mode="scaleToFill" class="sellphoto"></image>
+    </view>
+
+    <!-- 第二张 -->
+    <view class="c">
+      <image 
+      src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.boqiicdn.com%2FData%2FBK%2FP%2Fimg57991418291533.jpg&refer=http%3A%2F%2Fimg.boqiicdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624025726&t=09fb66a1a3f952fb3057a0010f95cf15" mode="scaleToFill" class="sellphoto"></image>
+    </view>
+
+    <!-- 第三张 -->
+    <view class="c">
+      <image 
+      src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.17qq.com%2Fimg_qqtouxiang%2F88169171.jpeg&refer=http%3A%2F%2Fwww.17qq.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624025726&t=57fca41d7f9a3abed4833d795b47fb06" mode="scaleToFill" class="sellphoto"></image>
+    </view>
+  </view>
+  <!-- 结束放图片 -->
+  <view style="display: flex;justify-content: space-between; margin: 40rpx 20rpx">
+    <view style="display:flex;flex-direction:row">
+      <image src="../../images/pinglun.png" style="height:40rpx;width:40rpx"></image>
+      <image src="../../images/kuohao.png" style="height:40rpx;width:40rpx"></image>
+    </view>
+  <view style=" width:60rpx;height:60rpx;background-color:white">
+  <view style="display:flex;flex-direction:row">
+    <image src="../../images/dianzan.png" style="height:40rpx;width:40rpx"></image>
+    <image src="../../images/kuohao.png"  style="height:40rpx;width:40rpx"></image>
+  </view>
+    
+  </view>
+</view>
+
+  <!-- 楼主评论 -->
+<view style="width:710rpx;background-color:white;padding-bottom:150rpx">
+  <view class="host-container" wx:for="{{5}}">
+    <view class="container1">
+      <!-- 头像开始 -->
+      <view class='a'>
+        <image 
+        src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201709%2F06%2F20170906180705_ynEKZ.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624021430&t=316de57674b3ce6f4abea09b4b735987" mode="scaleToFill" class="headphoto"> </image>
+      </view>
+      <!-- 头像结束  -->
+
+      <!-- 昵称，时间开始 -->
+      <view class='b'>
+        <view class="nickname">{{name}}</view>
+        <view class="time"> {{date}} {{time}}</view>
+      </view>
+      <!-- 昵称，时间结束 -->
+
+    </view>
+    <!-- 评论区大框 -->
+    <view class="com-container">
+      <view class="host-reply">
+        <view class="comments">{{comments}}</view>
+        <view class="reply-container">
+          <view class="name">{{name}}: </view>
+          <view class="comments"> {{comments}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 评论 -->
+  <!-- 楼主评论结束 -->
+
+</view>
+</view>
+<view style="width:100%;height: 120rpx;background-color: white;position:fixed; bottom: 0;display:flex;align-items:center">
+  <view style="display: flex;justify-content: space-between">
+    <view style="color:white;height: 80rpx; width: 80rpx;margin: 0rpx 20rpx 0rpx 20rpx">
+      <view>
+        <image src="../../images/ring.png" style="height: 60rpx;width:60rpx"></image>
+      </view>
+      <view style="color:#555;font-size:24rpx;margin-left:10rpx">电话</view>
+    </view>
+    <view style="color:white;height: 80rpx;width:80rpx;margin: 0rpx 20rpx 0rpx 20rpx">
+      <view>
+        <image src="../../images/weixin.png" style="height: 60rpx;width:60rpx"></image>
+      </view>
+      <view style="color:#555;font-size:24rpx;margin-left:10rpx">微信</view>
+    </view>
+    <view style="background-color:white;height: 80rpx;width:80rpx;margin: 0rpx 20rpx 0rpx 20rpx">
+      <view>
+        <image src="../../images/message.png" style="height: 60rpx;width:60rpx"></image>
+      </view>
+      <view style="height: 50%;color:#555;font-size:20rpx">留言</view>
+    </view>
+    <view style=" width:100rpx;height:60rpx;background-color:white"></view>
+    <view style="width:250rpx;height:100rpx">
+      <button style="color:white;background:linear-gradient(to right,#FEA282, #FE5F49);font-size:30rpx;width:250rpx">立即购物</button>
+    </view>
+  </view>
+</view>
